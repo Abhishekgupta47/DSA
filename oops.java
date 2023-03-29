@@ -1,28 +1,27 @@
-class Pen{
-    String color;
-    String type;
-  public void write(){
-    System.out.println("writting");
+
+
+class Student {
+  String name;
+  int age;
+
+  public void printInfo() {
+    System.out.println(this.name);
+    System.out.println(this.age);
   }
 
-  public void printColor(){
-    System.out.println(this.color);
+
+
+  Student() {
+    System.out.println("constructor called");
   }
 }
 
 public class oops {
    public static void main(String args[]){
-    Pen pen1 = new Pen(); 
-    pen1.color = "blue";
-    pen1.type="gel";
+   Student s1 = new Student();
+   s1.name="abhi";
+   s1.age=24;
 
-
-    //pen1.write();
-    Pen pen2 = new Pen();
-    pen2.color="black";
-    pen2.type="Ballpoint";
-
-    pen1.printColor();
-    pen2.printColor();
-   } 
+   s1.printInfo();
+}
 }
