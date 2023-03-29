@@ -11,16 +11,17 @@ class Student {
 
 
 
-  Student() {
-    System.out.println("constructor called");
+  Student(String name , int age) {
+    this .name=name;
+   this.age=age;
+
   }
 }
 
 public class oops {
    public static void main(String args[]){
-   Student s1 = new Student();
-   s1.name="abhi";
-   s1.age=24;
+   Student s1 = new Student("abhi",23);
+
 
    s1.printInfo();
 }
